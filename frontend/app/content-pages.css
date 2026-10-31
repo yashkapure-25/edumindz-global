@@ -1,0 +1,19 @@
+/* Additional styles for the four EduMindz content pages. */
+.content-intro-section { background: #fff; }
+.content-services-section { background: var(--paper); }
+.content-service-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 17px; }
+.content-service-card { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 26px 23px; min-height: 205px; }
+.content-service-card h3 { color: var(--navy); font-size: 16px; margin: 20px 0 9px; }
+.content-service-card p { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0; }
+.content-cta-section { padding: 65px 0; color: #fff; background: linear-gradient(110deg, #101f3d, #1b3764); }
+.content-cta-inner { display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.content-cta-inner h2 { color: #fff; font-size: clamp(27px, 3.5vw, 40px); margin: 15px 0 8px; }
+.content-cta-inner p { color: #d3def0; font-size: 13px; line-height: 1.7; margin: 0; }
+.content-page .footer-contact { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; }
+.content-page .footer-contact .footer-address { margin: 0; max-width: 270px; color: #aebbd0; font-size: 10px; line-height: 1.6; font-weight: 400; }
+@media (max-width: 760px) {
+  .content-service-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .content-service-card { padding: 20px 16px; }
+  .content-cta-inner { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 420px) { .content-service-grid { grid-template-columns: 1fr; } }
